@@ -17,7 +17,7 @@ const io = socket(server,{
     }
 })
 
-//white our call back if event is called (connection event for example)
+//write our call back if event is called (connection event for example)
 io.on('connection',(socket)=>{
     socket.emit('connection',null)
     console.log('new users connected')
