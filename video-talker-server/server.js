@@ -21,5 +21,5 @@ const io = socket(server,{
 io.on('connection',(socket)=>{
     socket.emit('connection',null)
     console.log('new users connected')
-    console.log(socket.io)
+    console.log(socket.id)
 })
